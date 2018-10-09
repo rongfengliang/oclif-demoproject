@@ -1,0 +1,51 @@
+{
+  "name": "rong",
+  "version": "0.0.0",
+  "author": "dalongrong @rongfengliang",
+  "bin": {
+    "rong": "./bin/run"
+  },
+  "bugs": "https://github.com/rongfengliang/rong/issues",
+  "dependencies": {
+    "@oclif/command": "^1",
+    "@oclif/config": "^1",
+    "@oclif/plugin-help": "^2",
+    "node-notifier": "^5.2.1"
+  },
+  "devDependencies": {
+    "@oclif/dev-cli": "^1",
+    "globby": "^8"
+  },
+  "pkg": {
+    "scripts": "src/**/*.js"
+  },
+  "engines": {
+    "node": ">=8.0.0"
+  },
+  "files": [
+    "/bin",
+    "/npm-shrinkwrap.json",
+    "/oclif.manifest.json",
+    "/src"
+  ],
+  "homepage": "https://github.com/rongfengliang/rong",
+  "keywords": [
+    "oclif"
+  ],
+  "license": "MIT",
+  "main": "src/index.js",
+  "oclif": {
+    "commands": "./src/commands",
+    "bin": "rong",
+    "plugins": [
+      "@oclif/plugin-help"
+    ]
+  },
+  "repository": "rongfengliang/rong",
+  "scripts": {
+    "postpack": "rm -f oclif.manifest.json npm-shrinkwrap.json",
+    "prepack": "oclif-dev manifest && oclif-dev readme && npm shrinkwrap",
+    "test": "echo NO TESTS",
+    "version": "oclif-dev readme && git add README.md"
+  }
+}
