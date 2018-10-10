@@ -14,8 +14,7 @@ class ListCommand extends Command {
 
 ListCommand.description = `Describe the command here
 ...
-Extra documentation goes here
-
+显示系统全部配置信息
 config list
 `
 
