@@ -39,7 +39,11 @@
     "bin": "rong",
     "plugins": [
       "@oclif/plugin-help"
-    ]
+    ],
+    "topics": {
+      "config:list": { "description": "config lits display" },
+      "config:set": { "description": "set config info" }
+    }
   },
   "repository": "rongfengliang/rong",
   "scripts": {
