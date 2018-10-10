@@ -4,6 +4,7 @@ class ListCommand extends Command {
   async run() {
     const {flags} = this.parse(ListCommand)
     this.log(`list all `)
+    this.log(JSON.stringify(this.config))
     notifier.notify({
       title: 'My notification',
       message: JSON.stringify(this.config)
